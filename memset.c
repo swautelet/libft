@@ -1,13 +1,17 @@
+#include<stdlib.h>
+
 void *memset (void *pointer, int value, size_t count)
 {
-	int i;
+	size_t i;
+	int *p;
+	
+	p = pointer;
 	i = 0;
-	(*unsigned char)pointer;
 	if (!pointer)
 		return (0);
 	while (i < count)
 	{
-		pointer[i] = (unsigned char)value;
+		p[i] = value;
 		i++;
 	}
 	return (pointer);
