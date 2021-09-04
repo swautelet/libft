@@ -13,3 +13,8 @@ fclean : clean
 
 re : fclean
 	ar rc $(NAME) $(FILES)
+
+save :
+	git add *
+	git commit -m autosave
+	git push
