@@ -1,6 +1,6 @@
 FILES = *.c
 OBJET = *.o
-NAME = libft.a
+NAME = libft.h
 
 all :
 	gcc -c -Wall -Wextra -Werror $(FILES)
@@ -11,7 +11,7 @@ clean :
 fclean : clean
 	rm $(NAME)
 
-re : fclean
+re : 
 	ar rc $(NAME) $(FILES)
 
 save :
