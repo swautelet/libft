@@ -6,15 +6,18 @@ static size_t	ft_strlen(const char *str)
 
 	i = 0;
 	while (*str)
+	{
+		str++;
 		i++;
+	}
 	return (i);
 }
 
 int	ft_strlcat(char *dest, const char *src, size_t size)
 {
-	while (dest)
+	while (*dest)
 		dest++;
-	while (size > 0 && src)
+	while (size > 0 && *src)
 	{
 		*dest = *src;
 		dest++;

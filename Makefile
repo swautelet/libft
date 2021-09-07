@@ -2,7 +2,7 @@ FILES = *.c
 OBJET = *.o
 NAME = libft.a
 
-all :
+all : re
 	ar rc $(NAME) $(OBJET) 
 
 clean :
