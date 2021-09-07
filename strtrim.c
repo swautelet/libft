@@ -42,21 +42,21 @@ char	*ft_strtrim(const char *s1, const char *del)
 	size_t	len;
 	char	*r;
 
+	len = ft_len(s1, del);
 	r = malloc(len + 1);
 	if (r == NULL)
 		return (NULL);
 	i = 0;
 	while (*s1)
 	{
-		l = 0;
-		while (del[l])
+		l = -1;
+		while (del[l++])
 		{
 			if (*s1 == del[l])
 			{
 				s1++;
-				l = 0;
+				l = -1;
 			}
-			l++;
 		}
 		r[i++] = *s1++;
 	}

@@ -35,4 +35,5 @@ char *ft_strtrim (const char *s1, const char *del)
 char *ft_substr (const char *s, unsigned int start, size_t len)
 int ft_tolower (int c)
 int ft_toupper (int c)
+
 #endif
