@@ -18,5 +18,5 @@ int ft_atoi (const char *str)
 		r = r * 10 + *str;
 		str++;
 	}
-	return(r);
+	return(r * s);
 }
