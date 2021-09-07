@@ -13,12 +13,11 @@ static size_t	ft_strlen(const char *str)
 	return (l);
 }
 
-char	*ft_strtrim(const char *s1, const char *del)
+static size_t	ft_len(const char *s1, const char *del)
 {
-	size_t	l;
-	size_t	i;
 	size_t	len;
-	char	*r;
+	size_t	i;
+	size_t	l;
 
 	i = 0;
 	len = ft_strlen(s1);
@@ -33,6 +32,16 @@ char	*ft_strtrim(const char *s1, const char *del)
 		}
 		i++;
 	}
+	return (len);
+}
+
+char	*ft_strtrim(const char *s1, const char *del)
+{
+	size_t	l;
+	size_t	i;
+	size_t	len;
+	char	*r;
+
 	r = malloc(len + 1);
 	if (r == NULL)
 		return (NULL);
@@ -49,9 +58,7 @@ char	*ft_strtrim(const char *s1, const char *del)
 			}
 			l++;
 		}
-		r[i] = *s1;
-		s1++;
-		i++;
+		r[i++] = *s1++;
 	}
 	r = "\0";
 	return (r);
