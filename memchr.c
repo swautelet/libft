@@ -2,13 +2,16 @@
 
 void	*ft_memchr(const void *memoryblock, int searched, size_t size)
 {
+	unsigned char	*s;
+
+	s = (unsigned char *)memoryblock;
 	while (size > 0)
 	{
-		if (*(int *)memoryblock == searched)
+		if (*s == (unsigned char)searched)
 		{
-			return ((void *) memoryblock);
+			return (s);
 		}
-		memoryblock++;
+		s++;
 		size--;
 	}
 	return (NULL);
