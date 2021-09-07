@@ -1,10 +1,10 @@
 #include<stdlib.h>
 
-char *ft_itoa (int n)
+char	*ft_itoa(int n)
 {
-	char *r;
-	int l;
-	int t;
+	char	*r;
+	int		l;
+	int		t;
 
 	t = n;
 	l = 1;
@@ -24,5 +24,5 @@ char *ft_itoa (int n)
 		r[l] = n % 10;
 		n = n / 10;
 	}
-	return(r);
+	return (r);
 }

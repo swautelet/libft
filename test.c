@@ -4,10 +4,10 @@
 #include<stdlib.h>
 #include"libft.h"
 
-int main (void)
+int	main(void)
 {
-	FILE *fu;
-	FILE *fs;
+	FILE	*fu;
+	FILE	*fs;
 
 	fu = fopen("user.txt", "a+");
 	fprintf(fu, "test");

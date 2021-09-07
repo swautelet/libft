@@ -1,9 +1,9 @@
 #include<stdlib.h>
 
-int ft_atoi (const char *str)
+int	ft_atoi(const char *str)
 {
-	int s;
-	int r;
+	int	s;
+	int	r;
 
 	s = 1;
 	r = 0;
@@ -18,5 +18,5 @@ int ft_atoi (const char *str)
 		r = r * 10 + *str;
 		str++;
 	}
-	return(r * s);
+	return (r * s);
 }

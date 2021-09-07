@@ -1,6 +1,6 @@
 #include<stdlib.h>
 
-int ft_strncmp (const char *first, const char *second, size_t len)
+int	ft_strncmp(const char *first, const char *second, size_t len)
 {
 	while (len > 0)
 	{
@@ -10,5 +10,5 @@ int ft_strncmp (const char *first, const char *second, size_t len)
 		first++;
 		second++;
 	}
-	return(0);
+	return (0);
 }

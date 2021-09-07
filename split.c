@@ -1,8 +1,8 @@
 #include<stdlib.h>
 
-static size_t ft_count (const char *str, const char c)
+static size_t	ft_count(const char *str, const char c)
 {
-	size_t l;
+	size_t	l;
 
 	l = 1;
 	while (*str)
@@ -11,14 +11,14 @@ static size_t ft_count (const char *str, const char c)
 			l++;
 		str++;
 	}
-	return(l);
+	return (l);
 }
 
-char **ft_split (const char *str, char c)
+char	**ft_split(const char *str, char c)
 {
-	char **r;
-	size_t i;
-	size_t l;
+	char	**r;
+	size_t	i;
+	size_t	l;
 
 	i = 0;
 	l = 0;
@@ -35,5 +35,5 @@ char **ft_split (const char *str, char c)
 		str++;
 		i++;
 	}
-	return(r);
+	return (r);
 }
