@@ -2,13 +2,11 @@
 
 int	ft_strncmp(const char *first, const char *second, size_t len)
 {
-	while (len > 0)
+	while (len > 1 && *first && *second && *first == *second)
 	{
-		if (*first != *second)
-			return (*first - *second);
 		len--;
 		first++;
 		second++;
 	}
-	return (0);
+	return (*(unsigned char *)first - *(unsigned char *)second);
 }
