@@ -6,15 +6,15 @@
 /*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:39:55 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/10 15:39:56 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/10 15:46:14 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
 
-static int ft_len (unsigned int n)
+static int	ft_len(unsigned int n)
 {
-	int l;
+	int	l;
 
 	l = 2;
 	if (n < 0)

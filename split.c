@@ -6,7 +6,7 @@
 /*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:57 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/10 15:41:58 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/10 15:47:00 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static size_t	ft_count(const char *str, const char c)
 
 static int	ft_len(const char *str, const char c)
 {
-	int d;
+	int	d;
 
 	d = 0;
 	while (*str && *str != c)
