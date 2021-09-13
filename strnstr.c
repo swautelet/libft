@@ -6,7 +6,7 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:43:13 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:57:12 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 15:43:15 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,16 @@ char	*ft_strnstr(const char *str, const char *searched, size_t n)
 {
 	size_t	i;
 
-	while (str)
+	if (str == searched)
+		return ((char *)str);
+	while (*str && n-- >= 0)
 	{
 		i = 0;
-		while (str[i] == searched[i] && i < n)
+		while (str[i] == searched[i] && n - i > 0)
 		{
 			i++;
 		}
-		if (searched[i] == '\0' || i == n)
+		if (searched[i] == '\0')
 			return ((char *)str);
 		str++;
 	}
