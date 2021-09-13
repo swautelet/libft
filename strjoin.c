@@ -6,25 +6,12 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:42:27 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:28:06 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:32:40 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
 #include"libft.h"
-
-static size_t	ft_strlen(const char *str)
-{
-	size_t	l;
-
-	l = 0;
-	while (*str != '\0')
-	{
-		str++;
-		l++;
-	}
-	return (l);
-}
 
 char	*ft_strjoin(const char *s1, const char *s2)
 {

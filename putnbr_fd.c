@@ -6,17 +6,12 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:41 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:27:38 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:32:10 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<unistd.h>
 #include"libft.h"
-
-static void	ft_putchar_fd(char c, int fd)
-{
-	write(fd, &c, 1);
-}
 
 void	ft_putnbr_fd(int n, int fd)
 {

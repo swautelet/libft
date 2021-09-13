@@ -6,7 +6,7 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:42:41 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:28:16 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:52:02 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ int	ft_strlcpy(char *dest, const char *src, size_t size)
 		i++;
 		size--;
 	}
-	dest[i] = '\0';
-	return (i);
+	if (size >= 1)
+		dest[i] = '\0';
+	return (ft_strlen(src));
 }

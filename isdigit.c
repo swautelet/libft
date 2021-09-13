@@ -6,11 +6,12 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:39:39 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:26:46 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:31:03 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
+
 int	ft_isdigit(int c)
 {
 	if (c <= '9' && c >= '0')
