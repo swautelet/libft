@@ -6,11 +6,10 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:43:26 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:33:18 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:57:21 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
 #include"libft.h"
 
 static size_t	ft_len(const char *s1, const char *del)

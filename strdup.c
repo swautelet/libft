@@ -6,11 +6,10 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:42:11 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:32:29 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:56:34 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
 #include"libft.h"
 
 char	*ft_strdup(const char *src)

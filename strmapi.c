@@ -6,12 +6,10 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:42:56 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:33:03 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:57:04 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
-#include<stdlib.h>
 #include"libft.h"
 
 char	*ft_strmapi(const char *str, char (*f)(unsigned int, char))

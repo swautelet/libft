@@ -6,11 +6,10 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:40:56 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:27:15 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:55:42 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<stdlib.h>
 #include"libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

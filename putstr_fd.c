@@ -6,11 +6,10 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:48 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:27:42 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:56:19 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
 #include"libft.h"
 
 void	ft_putstr_fd(char *s, int fd)
