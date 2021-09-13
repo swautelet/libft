@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   itoa.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
+/*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:39:55 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/10 15:46:14 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:27:03 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
+#include"libft.h"
 
 static int	ft_len(unsigned int n)
 {

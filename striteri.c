@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   striteri.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
+/*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:47:27 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/10 15:47:42 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:28:02 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include"libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {

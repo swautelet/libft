@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   memmove.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
+/*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:15 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/10 19:40:07 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:27:21 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
+#include"libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {

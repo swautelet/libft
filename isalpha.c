@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   isalpha.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
+/*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:39:26 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/10 15:39:27 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:26:31 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include"libft.h"
 
 int	ft_isalpha(int c)
 {

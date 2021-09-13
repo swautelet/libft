@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   strchr.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
+/*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:42:04 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/10 15:42:05 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:27:50 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
+#include"libft.h"
 
 char	*ft_strchr(const char *str, int searched)
 {

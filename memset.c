@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   memset.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
+/*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:21 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/10 15:41:22 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:27:25 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<stdlib.h>
+#include"libft.h"
 
 void	*memset(void *pointer, int value, size_t count)
 {

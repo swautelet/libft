@@ -2,8 +2,7 @@ FILES = *.c
 OBJET = *.o
 NAME = libft.a
 
-all : re
-	ar rc $(NAME) $(OBJET) 
+all : re comp
 
 clean :
 	rm $(OBJET)
@@ -18,3 +17,5 @@ save :
 	git add *
 	git commit -m autosave
 	git push
+comp :
+	ar rc $(NAME) $(OBJET)

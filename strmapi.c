@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   strmapi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
+/*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:42:56 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/10 15:42:57 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:28:27 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include<unistd.h>
 #include<stdlib.h>
+#include"libft.h"
 
 static size_t	ft_strlen(const char *str)
 {

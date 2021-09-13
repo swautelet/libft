@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   isalnum.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
+/*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:39:19 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/10 15:39:21 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 13:26:01 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 static int	ft_isdigit(int c)
 {
