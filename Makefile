@@ -13,7 +13,7 @@ fclean : clean
 re : 
 	gcc -c -Wall -Wextra -Werror $(FILES)
 
-save :
+save : clean
 	git add *
 	git commit -m autosave
 	git push
