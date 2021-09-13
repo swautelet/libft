@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   split.c                                            :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:57 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 19:49:49 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 20:31:56 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,18 +51,12 @@ static int	ft_len(const char *str, const char c)
 	return (d);
 }
 
-char	**ft_split(const char *str, char c)
+static void	alloc_memory(char **r, const char *str, char c)
 {
-	char	**r;
 	size_t	i;
 	size_t	l;
 
 	l = -1;
-	if (!str)
-		return (0);
-	r = ft_calloc (sizeof(char *), ft_count(str, c) + 1);
-	if (r == NULL)
-		return (NULL);
 	while (*str)
 	{
 		while (*str == c)
@@ -75,7 +69,7 @@ char	**ft_split(const char *str, char c)
 		if (r[l] == NULL)
 		{
 			ft_free(r, l);
-			return (NULL);
+			return ;
 		}
 		while (*str && *str != c)
 		{
@@ -86,5 +80,16 @@ char	**ft_split(const char *str, char c)
 		if (*str == c || *str == '\0')
 			r[l][i] = '\0';
 	}
+}
+char	**ft_split(const char *str, char c)
+{
+	char	**r;
+
+	if (!str)
+		return (0);
+	r = ft_calloc (sizeof(char *), ft_count(str, c) + 1);
+	if (r == NULL)
+		return (NULL);
+	alloc_memory(r, str, c);
 	return (r);
 }
