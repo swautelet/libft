@@ -6,7 +6,7 @@
 /*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:15 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/10 15:41:16 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/10 19:40:07 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	s = (const char *)src;
 	if (dest == src)
 		return (NULL);
-	else if (s < d)
+	if (s < d)
 	{
 		d = d + n - 1;
 		s = s + n - 1;
@@ -33,7 +33,9 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	else
 	{
 		while (n--)
+		{
 			*d++ = *s++;
+		}
 	}
 	return (dest);
 }
