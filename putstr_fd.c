@@ -6,7 +6,7 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:48 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:56:19 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 18:59:47 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	if (!s || !fd)
+		return ;
 	while (*s)
 	{
 		write (fd, s, 1);

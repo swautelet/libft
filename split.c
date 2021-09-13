@@ -6,7 +6,7 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:57 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:56:25 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/13 19:05:12 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static size_t	ft_count(const char *str, const char c)
 	{
 		while (*str && *str == c)
 			str++;
-		if (*str != c)
+		if (*str != c && *str)
 			l++;
 		while (*str && *str != c)
 			str++;
@@ -49,6 +49,8 @@ char	**ft_split(const char *str, char c)
 	size_t	l;
 
 	l = -1;
+	if (!str)
+		return (0);
 	r = malloc (sizeof(char *) * ft_count(str, c));
 	if (r == NULL)
 		return (NULL);
@@ -67,6 +69,8 @@ char	**ft_split(const char *str, char c)
 		}
 		if (*str == c || *str == '\0')
 			r[l][i] = '\0';
+		while (*str == c)
+			str++;
 	}
 	return (r);
 }
