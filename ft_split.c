@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
+/*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:57 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 20:34:41 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/15 21:31:48 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,15 +72,12 @@ static void	alloc_memory(char **r, const char *str, char c)
 			return ;
 		}
 		while (*str && *str != c)
-		{
-			r[l][i] = *str;
-			str++;
-			i++;
-		}
+			r[l][i++] = *str++;
 		if (*str == c || *str == '\0')
 			r[l][i] = '\0';
 	}
 }
+
 char	**ft_split(const char *str, char c)
 {
 	char	**r;
