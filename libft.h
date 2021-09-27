@@ -6,7 +6,7 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 21:38:59 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/27 12:41:15 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/27 15:35:11 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void	*ft_memchr(const void *memoryblock, int searched, size_t size);
 int		ft_memcmp(const void *p1, const void *p2, size_t n);
 void	*ft_memcpy(void *destination, const void *source, size_t size);
 void	*ft_memmove(void *dest, const void *src, size_t n);
-void	*memset(void *pointer, int value, size_t count);
+void	*ft_memset(void *pointer, int value, size_t count);
 void	ft_putchar_fd(char c, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);

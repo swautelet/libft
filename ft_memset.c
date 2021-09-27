@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   memset.c                                           :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:21 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:55:57 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/27 15:35:19 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-void	*memset(void *pointer, int value, size_t count)
+void	*ft_memset(void *pointer, int value, size_t count)
 {
 	size_t	i;
 	int		*p;

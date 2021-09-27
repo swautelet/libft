@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
+/*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:38:37 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/14 21:37:46 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/27 15:35:43 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include"libft.h"
 
-int	ft_sign(const char *str)
+static int	ft_sign(const char *str)
 {
 	int	s;
 

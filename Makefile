@@ -14,8 +14,8 @@ fclean : clean
 re : 
 	gcc -c -Wall -Wextra -Werror $(FILES)
 
-save : re clean
-	git add *
+save : all fclean
+	git add *.c libft.h Makefile
 	git commit -m autosave
 	git push
 

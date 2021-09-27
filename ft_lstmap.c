@@ -6,7 +6,7 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 12:59:04 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/27 15:12:02 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/27 15:16:11 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 
 	if (!lst || !*f)
 		return (NULL);
-	;
-	if (!(new = ft_lstnew((*f)(lst->content))))
+	new = ft_lstnew((*f)(lst->content));
+	if (!new)
 	{
 		ft_lstclear(&new, del);
 		return (NULL);
