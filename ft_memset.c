@@ -6,7 +6,7 @@
 /*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:21 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/27 15:35:19 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/27 15:51:51 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 void	*ft_memset(void *pointer, int value, size_t count)
 {
-	size_t	i;
-	int		*p;
+	size_t				i;
+	unsigned char		*p;
 
 	p = pointer;
 	i = 0;
