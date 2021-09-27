@@ -6,15 +6,15 @@ BONUS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c
 all : re comp
 
 clean :
-	rm $(OBJET)
+	rm -f $(OBJET)
 
 fclean : clean
-	rm $(NAME)
+	rm -f $(NAME)
 
 re : 
 	gcc -c -Wall -Wextra -Werror $(FILES)
 
-save : all fclean
+save : fclean
 	git add *.c libft.h Makefile
 	git commit -m autosave
 	git push
