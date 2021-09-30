@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   strrchr.c                                          :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
+/*   By: simonwautelet <simonwautelet@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:43:20 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/13 13:57:17 by swautele         ###   ########.fr       */
+/*   Updated: 2021/09/30 18:24:14 by simonwautel      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strrchr(const char *str, int searched)
 		str++;
 	while (str >= start)
 	{
-		if (*str == searched)
+		if (*str == searched % 256)
 			return ((char *)str);
 		str--;
 	}
