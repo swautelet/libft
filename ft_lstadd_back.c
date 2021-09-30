@@ -6,7 +6,7 @@
 /*   By: simonwautelet <simonwautelet@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/27 12:47:27 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/30 20:49:45 by simonwautel      ###   ########.fr       */
+/*   Updated: 2021/09/30 21:00:07 by simonwautel      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {
 	t_list	*last;
-	
+
 	if (alst)
 	{
 		if (*alst == NULL)
