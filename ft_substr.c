@@ -6,7 +6,7 @@
 /*   By: simonwautelet <simonwautelet@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:43:32 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/30 23:06:20 by simonwautel      ###   ########.fr       */
+/*   Updated: 2021/10/01 17:02:36 by simonwautel      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,10 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	i = 0;
+	if (len > ft_strlen(s) && start < ft_strlen(s))
+		len = ft_strlen(s) - start + 1;
+	if (start > ft_strlen(s))
+		len = -1;
 	r = malloc (len + 1);
 	if (r == NULL)
 		return (NULL);
