@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: swautele <swautele@student.s19.be>         +#+  +:+       +#+        */
+/*   By: simonwautelet <simonwautelet@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:57 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/15 21:31:48 by swautele         ###   ########.fr       */
+/*   Updated: 2021/10/02 23:37:45 by simonwautel      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ static void	ft_free(char **r, int l)
 		free(r[l]);
 		l--;
 	}
+	free(r);
 }
 
 static size_t	ft_count(const char *str, const char c)
@@ -65,7 +66,7 @@ static void	alloc_memory(char **r, const char *str, char c)
 			break ;
 		i = 0;
 		l++;
-		r[l] = ft_calloc (sizeof(char), (ft_len(str, c)));
+		r[l] = malloc (sizeof(char) * (ft_len(str, c)));
 		if (r[l] == NULL)
 		{
 			ft_free(r, l);
@@ -78,7 +79,7 @@ static void	alloc_memory(char **r, const char *str, char c)
 	}
 }
 
-char	**ft_split(const char *str, char c)
+char	**ft_split(char const *str, char c)
 {
 	char	**r;
 
