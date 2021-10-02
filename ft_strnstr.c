@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: simonwautelet <simonwautelet@student.42    +#+  +:+       +#+        */
+/*   By: swautele <swautele@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:43:13 by swautele          #+#    #+#             */
-/*   Updated: 2021/09/30 22:57:26 by simonwautel      ###   ########.fr       */
+/*   Updated: 2021/10/02 13:48:28 by swautele         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strnstr(const char *str, const char *searched, size_t n)
 {
 	size_t	i;
 
-	if (str == searched)
+	if (str == searched || *searched == '\0')
 		return ((char *)str);
 	if (n == 0)
 		return (NULL);
