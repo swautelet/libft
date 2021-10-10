@@ -44,10 +44,10 @@ BONUS = ft_lstnew.c \
 			ft_lstiter.c \
 			ft_lstmap.c
 OBJECTB = $(BONUS:.c=.o)
-FLAGS = -c -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 
-all : $(OBJECT) $(NAME)
+all : $(OBJECT) $(NAME)($(OBJECT))
 
 clean :
 	rm -f $(OBJECT) $(OBJECTB)
@@ -60,16 +60,15 @@ save : fclean
 	git commit -m autosave
 	git push
 
-bonus : all $(OBJECTB) $(NAME)B  
+bonus : $(OBJECTB) $(NAME)($(OBJECTB))
 
-$(OBJECT): $(FILES)
-	gcc $(FLAGS) $?
+%.o : %.c
+	gcc -c $(CFLAGS) $?
 
-$(OBJECTB) : $(BONUS)
-	gcc $(FLAGS) $?
+$(NAME)($(OBJECT)) :
+	$(AR) $(NAME) $%
 
-$(NAME) : $(OBJECT)
-	$(AR) $(NAME) $?
+$(NAME)($(OBJECTB)) :
+	$(AR) $(NAME) $%
 
-$(NAME)B : $(OBJECTB)
-	$(AR) $(NAME) $?
+.PHONY: all clean fclean save bonus 
