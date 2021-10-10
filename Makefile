@@ -60,13 +60,16 @@ save : fclean
 	git commit -m autosave
 	git push
 
-bonus : $(OBJECTB) $(NAME)B  
+bonus : all $(OBJECTB) $(NAME)B  
 
-%.o : %.c
+$(OBJECT): $(FILES)
+	gcc $(FLAGS) $?
+
+$(OBJECTB) : $(BONUS)
 	gcc $(FLAGS) $?
 
 $(NAME) : $(OBJECT)
 	$(AR) $(NAME) $?
 
-$(NAME)B : $(OBJECT) $(OBJECTB)
+$(NAME)B : $(OBJECTB)
 	$(AR) $(NAME) $?
