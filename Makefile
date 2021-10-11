@@ -47,7 +47,7 @@ OBJECTB = $(BONUS:.c=.o)
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 
-all : $(OBJECT) $(NAME)($(OBJECT))
+all : $(NAME)($(OBJECT))
 
 clean :
 	rm -f $(OBJECT) $(OBJECTB)
@@ -60,15 +60,15 @@ save : fclean
 	git commit -m autosave
 	git push
 
-bonus : $(OBJECTB) $(NAME)($(OBJECTB))
+bonus : $(NAME)($(OBJECTB))
 
 %.o : %.c
 	gcc -c $(CFLAGS) $?
 
-$(NAME)($(OBJECT)) :
+$(NAME)($(OBJECT)) : $(OBJECT)
 	$(AR) $(NAME) $%
 
-$(NAME)($(OBJECTB)) :
+$(NAME)($(OBJECTB)) : $(OBJECTB)
 	$(AR) $(NAME) $%
 
 .PHONY: all clean fclean save bonus 
