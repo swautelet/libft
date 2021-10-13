@@ -58,7 +58,7 @@ fclean : clean
 save : fclean
 	git add $(FILES) $(BONUS) libft.h Makefile
 	git commit -m autosave
-	git push
+	git push git@vogsphere-v2.s19.be:vogsphere/intra-uuid-ae701809-1aab-4007-a154-6f450ffb3e79-3837416
 
 bonus : $(NAME)($(OBJECTB))
 
