@@ -47,7 +47,7 @@ OBJECTB = $(BONUS:.c=.o)
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 
-all : $(NAME)($(OBJECT))
+all : $(OBJECT) $(NAME)($(OBJECT))
 
 clean :
 	rm -f $(OBJECT) $(OBJECTB)
@@ -60,15 +60,15 @@ save : fclean
 	git commit -m autosave
 	git push git@vogsphere-v2.s19.be:vogsphere/intra-uuid-ae701809-1aab-4007-a154-6f450ffb3e79-3837416
 
-bonus : $(NAME)($(OBJECTB))
+bonus : $(OBJECTB) $(NAME)($(OBJECTB))
 
 %.o : %.c
 	gcc -c $(CFLAGS) $?
 
-$(NAME)($(OBJECT)) : $(OBJECT)
+$(NAME)($(OBJECT)) :
 	$(AR) $(NAME) $%
 
-$(NAME)($(OBJECTB)) : $(OBJECTB)
+$(NAME)($(OBJECTB)) :
 	$(AR) $(NAME) $%
 
 .PHONY: all clean fclean save bonus 
