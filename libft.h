@@ -6,7 +6,7 @@
 /*   By: simonwautelet <simonwautelet@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/14 21:38:59 by swautele          #+#    #+#             */
-/*   Updated: 2021/10/02 17:04:33 by simonwautel      ###   ########.fr       */
+/*   Updated: 2021/10/17 14:30:48 by simonwautel      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <stdio.h>
 # include <stdlib.h>
 
 typedef struct s_list
