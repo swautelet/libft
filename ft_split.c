@@ -6,7 +6,7 @@
 /*   By: simonwautelet <simonwautelet@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/10 15:41:57 by swautele          #+#    #+#             */
-/*   Updated: 2021/10/02 23:48:27 by simonwautel      ###   ########.fr       */
+/*   Updated: 2021/10/22 11:44:39 by simonwautel      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ static int	ft_len(const char *str, const char c)
 {
 	int	d;
 
-	d = 0;
+	d = 1;
 	while (*str && *str != c)
 	{
 		d++;
